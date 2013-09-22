@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#404041;
+}
+
+#principal {
+	width:900px;
+	margin:auto;
+}
+
+#logoAvon {
+	background:url(img/logoAvon.jpg);
+	width:363px; height:45px;
+	display:block;
+	margin-top:32px;
+	margin-bottom:16px;
+}
+
+#formContainer {
+	background: #E6E7E8;
+	padding:10px 0px 10px 33px;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#formContainer div {
+	margin: 20px 0px;
+}
+
+span, input, select {
+	vertical-align:middle;
+	display:inline-block;
+	margin-left:10px;
+}
+
+span {
+	max-width:65px;	
+}
+
+.campo, .campo2 {
+	background:#FFF; color:#666; font-size:12px; font-family:Arial, Helvetica, sans-serif;
+	border:none; padding: 6px 15px;
+	-webkit-box-shadow:  1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:  1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	margin-right:22px;
+	margin-left:10px;
+}
+
+.campo2 {
+	padding: 6px;
+	width:65px;
+}
+
+.division {
+	border-bottom: #A7A9AB solid 1px;
+	height:1px;
+	width:830px;
+}
+
+.legales, .legales:link {
+	color:#ED2A7B; text-decoration:none;
+}
+.legales:hover {
+	color:#000000;
+}
+
+#botonEnviar, #botonLimpiar {
+	display: inline-block;
+	width:148px; height:31px;
+	background:url(img/botonEnviar.png) no-repeat top;
+	margin-left:30px;
+	vertical-align:middle;
+}
+#botonLimpiar { background:url(img/botonLimpiar.png) no-repeat top; }
+
+#botonEnviar:hover, #botonLimpiar:hover { background-position:bottom }

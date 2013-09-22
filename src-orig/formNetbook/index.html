@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AVON - Vos hacés todo mas lindo</title>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+
+<!-- Jquery -->
+<script src="_scripts/jquery-1.7.2.min.js"></script>
+
+<!-- Colorbox -->
+<link rel="stylesheet" href="_colorbox/colorbox.css" />
+<script src="_colorbox/jquery.colorbox.js"></script>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {	
+		$('.legales').colorbox();
+	});
+</script>
+
+</head>
+
+<body>
+
+<div id="principal">
+
+	<div id="logoAvon"></div>
+    
+    <form action="" method="get">
+    <div id="formContainer">
+    	<div>
+            <span>Apellido</span><input name="apellido" id="apellido" type="text" class="campo" style="width:299px" />
+            <span>Nombres</span><input name="nombres" id="nombres" type="text" class="campo" style="width:299px" />
+		</div>
+        <div>
+            <span>Fecha de Nacimiento</span>
+            	<input name="dia" id="dia" type="text" class="campo" style="width:40px; margin:0px 10px" />/
+                <input name="mes" id="mes" type="text" class="campo" style="width:40px; margin:0px 10px" />/
+                <input name="ano" id="ano" type="text" class="campo" style="width:65px; margin:0px 10px" />
+            <span style="max-width: none">Tipo y Nº de Documento</span>
+            	<select name="tipoDoc" id="tipoDoc" class="campo2" style=" margin-right:0px; width:80px" >
+                	<option>DNI</option>
+                    <option>LC</option>
+                </select>
+                <input name="numeroDoc" id="numeroDoc" type="text" class="campo" style="width:154px" />
+		</div>
+        <div class="division"></div>
+        <div style="font-size:12px; font-weight:bold; color:#6D6E70; padding-left:10px">DOMICILIO</div>
+        <div>
+            <span>Calle y Número</span><input name="calle" id="calle" type="text" class="campo" style="margin-right:8px; width90px" />
+            <span>Ciudad</span><input name="ciudad" id="ciudad" type="text" class="campo" style="margin-right:8px; width:90px" />
+            <span>Partido</span><input name="partido" id="partido" type="text" class="campo" style="margin-right:8px; width:90px" />
+            <span>Localidad</span><input name="localidad" id="localidad" type="text" class="campo" style="margin-right:0px; width:90px" />
+		</div>
+        <div class="division"></div>
+        <div>
+            <span>Telefono Celular</span><input name="tel" id="tel" type="text" class="campo" style="width:260px" />
+            <span>Email</span><input name="email" id="email" type="text" class="campo" style="width:339px" />
+		</div>
+        <div class="division"></div>
+        <div>
+        	<span style="max-width: none">Es usted revendedora Avon?</span><span><input name="revendedora" type="radio" value="Si" /> Si</span><span><input name="revendedora" type="radio" value="No" />No</span>
+            <span style="max-width: none; margin-left:32px">Nº de Cuenta Corriente Avon</span><input name="numeroCuenta" id="numeroCuenta" type="text" class="campo" style="width:321px" />
+        </div>
+        <div class="division"></div>
+        <div>
+        	<input name="aceptaTerminos" type="checkbox" value="" /><span>Acepto los </span><a href="legales.html" class="legales" style="margin-right:239px"> Teminos y condiciones</a>
+            
+            <a id="botonEnviar" href="#"></a>
+            <a id="botonLimpiar" href="#"></a>
+        </div>
+    </div>
+    </form>
+
+</div>
+
+</body>
+</html>
